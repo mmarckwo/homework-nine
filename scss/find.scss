@@ -1,0 +1,73 @@
+.find {
+  .find-content {
+    background-color: $light-gray;
+    font-family: UbuntuLight;
+    font-size: 20px;
+
+    .banner-image {
+      max-width: 1200px;
+      min-height: 220px;
+      display: flex;
+      margin-bottom: 60px;
+    }
+
+    .find-banner {
+      background-image: url(../images/map-location-pin.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+
+    .words {
+      padding-left: 10%;
+      padding-right: 10%;
+      color: $white;
+      padding-bottom: 5%;
+    }
+
+    .horiz-image {
+      background-color: $lighter-gray;
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 700px;
+      min-height: 340px;
+      display: flex;
+      margin-top: -15px;
+      margin-bottom: 5%;
+
+      .image-area {
+        width: 300px;
+        height: 300px;
+        //background-color: darkblue;
+      }
+
+      .image1 {
+        background-image: url(../images/officephone.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .image2 {
+        background-image: url(../images/locations.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .image-text {
+        max-width: 380px;
+        position: relative;
+        //background-color: green;
+        min-height: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        color: $white;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+      }
+    }
+  }
+}

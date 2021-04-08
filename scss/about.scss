@@ -1,0 +1,58 @@
+.about {
+  .about-content {
+    background-color: $light-gray;
+    font-family: UbuntuLight;
+    font-size: 20px;
+
+    .banner-image {
+      max-width: 1200px;
+      min-height: 220px;
+      display: flex;
+      margin-bottom: 60px;
+    }
+
+    .about-banner {
+      background-image: url(../images/about.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .words {
+      padding-left: 10%;
+      padding-right: 10%;
+      color: $white;
+      padding-bottom: 5%;
+    }
+
+    .image {
+      display: flex;
+      justify-content: space-around;
+
+      .image-area {
+        //padding: 20px;
+        min-height: 300px;
+        width: 340px;
+        margin-top: 5px;
+        margin-bottom: 65px;
+        //background-color: rgb(95, 95, 95);
+      }
+
+      .image {
+        height: 300px;
+        width: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .image1 {
+        background-image: url(../images/Cellphones.jpg);
+      }
+
+      .image2 {
+        background-image: url(../images/office-manager.jpg);
+      }
+    }
+  }
+}

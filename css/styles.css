@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #2c2a2a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: UbuntuLight;
+  src: url(fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url(fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+nav {
+  max-width: 980px;
+  min-height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #2c2a2a solid 2px;
+  margin-top: 30px;
+}
+nav .title {
+  width: 92px;
+  height: 42px;
+}
+nav .title p {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 15px;
+  font-family: Ubuntu;
+  font-size: 25px;
+}
+nav .links {
+  width: 592px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+}
+nav .links a {
+  text-decoration: none;
+  color: #fff;
+  margin: auto;
+  font-family: Ubuntu;
+}
+nav .links p {
+  text-decoration: none;
+  color: #fff;
+  margin: auto;
+  font-size: 25px;
+  font-family: Ubuntu;
+}
+
+@media only screen and (max-width: 750px) {
+  nav {
+    max-width: 460px;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 30px;
+  }
+  nav .logo {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+  nav .links {
+    max-width: 450px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+}
+.main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #424242;
+}
+.main .content-area {
+  margin-top: 36px;
+  margin-bottom: 46px;
+}
+.main .content-area h3 {
+  text-decoration: none;
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 30px;
+  margin-bottom: 46px;
+}
+
+.home .home-content {
+  background-color: #494949;
+  font-family: UbuntuLight;
+  font-size: 20px;
+}
+.home .home-content .banner-image {
+  max-width: 1200px;
+  min-height: 220px;
+  display: flex;
+  margin-bottom: 60px;
+}
+.home .home-content .home-banner {
+  background-image: url(../images/home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home .home-content .words {
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #fff;
+  padding-bottom: 5%;
+}
+.home .home-content .double-image {
+  display: flex;
+  justify-content: space-around;
+}
+.home .home-content .double-image .image-area {
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 5px;
+  margin-bottom: 65px;
+}
+.home .home-content .double-image .image1 {
+  background-image: url(../images/store-inside1.jpg);
+}
+.home .home-content .double-image .image2 {
+  background-image: url(../images/store-inside2.jpg);
+}
+
+@media only screen and (max-width: 780px) {
+  .home .home-content .double-image {
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+.images .images-content {
+  background-color: #494949;
+  font-family: UbuntuLight;
+  font-size: 20px;
+}
+.images .images-content .banner-image {
+  max-width: 1200px;
+  min-height: 220px;
+  display: flex;
+  margin-bottom: 60px;
+}
+.images .images-content .images-banner {
+  background-image: url(../images/store-front.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.images .images-content .words {
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #fff;
+  padding-bottom: 5%;
+}
+.images .images-content .double-image {
+  display: flex;
+  justify-content: space-around;
+}
+.images .images-content .double-image .image-area {
+  padding: 20px;
+  min-height: 300px;
+  width: 340px;
+  margin-top: 5px;
+  margin-bottom: 65px;
+  background-color: #5f5f5f;
+}
+.images .images-content .double-image .image {
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.images .images-content .double-image .text-area {
+  margin-top: 20px;
+  margin-bottom: -15px;
+  color: #fff;
+  font-size: 18px;
+}
+.images .images-content .double-image .image1 {
+  background-image: url(../images/phone.jpg);
+}
+.images .images-content .double-image .image2 {
+  background-image: url(../images/laptop.jpg);
+}
+.images .images-content .double-image .image3 {
+  background-image: url(../images/store-inside3.jpg);
+}
+.images .images-content .double-image .image4 {
+  background-image: url(../images/store-inside4.jpg);
+}
+
+@media only screen and (max-width: 780px) {
+  .images .images-content .double-image {
+    flex-direction: column;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.about .about-content {
+  background-color: #494949;
+  font-family: UbuntuLight;
+  font-size: 20px;
+}
+.about .about-content .banner-image {
+  max-width: 1200px;
+  min-height: 220px;
+  display: flex;
+  margin-bottom: 60px;
+}
+.about .about-content .about-banner {
+  background-image: url(../images/about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .about-content .words {
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #fff;
+  padding-bottom: 5%;
+}
+.about .about-content .image {
+  display: flex;
+  justify-content: space-around;
+}
+.about .about-content .image .image-area {
+  min-height: 300px;
+  width: 340px;
+  margin-top: 5px;
+  margin-bottom: 65px;
+}
+.about .about-content .image .image {
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about .about-content .image .image1 {
+  background-image: url(../images/Cellphones.jpg);
+}
+.about .about-content .image .image2 {
+  background-image: url(../images/office-manager.jpg);
+}
+
+.find .find-content {
+  background-color: #494949;
+  font-family: UbuntuLight;
+  font-size: 20px;
+}
+.find .find-content .banner-image {
+  max-width: 1200px;
+  min-height: 220px;
+  display: flex;
+  margin-bottom: 60px;
+}
+.find .find-content .find-banner {
+  background-image: url(../images/map-location-pin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.find .find-content .words {
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #fff;
+  padding-bottom: 5%;
+}
+.find .find-content .horiz-image {
+  background-color: #5f5f5f;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 700px;
+  min-height: 340px;
+  display: flex;
+  margin-top: -15px;
+  margin-bottom: 5%;
+}
+.find .find-content .horiz-image .image-area {
+  width: 300px;
+  height: 300px;
+}
+.find .find-content .horiz-image .image1 {
+  background-image: url(../images/officephone.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.find .find-content .horiz-image .image2 {
+  background-image: url(../images/locations.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.find .find-content .horiz-image .image-text {
+  max-width: 380px;
+  position: relative;
+  min-height: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}

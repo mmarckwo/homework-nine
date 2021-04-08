@@ -1,0 +1,67 @@
+nav {
+  max-width: 980px;
+  min-height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: $black solid 2px;
+  margin-top: 30px;
+
+  .title {
+    width: 92px;
+    height: 42px;
+
+    p {
+      text-decoration: none;
+      color: $white;
+      margin-top: 15px;
+      font-family: Ubuntu;
+      font-size: 25px;
+    }
+  }
+
+  .links {
+    width: 592px;
+    height: 42px;
+    align-self: center;
+    display: flex;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      margin: auto;
+      font-family: Ubuntu;
+    }
+
+    p {
+      text-decoration: none;
+      color: $white;
+      margin: auto;
+      font-size: 25px;
+      font-family: Ubuntu;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  nav {
+    max-width: 460px;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 30px;
+
+    .logo {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 5px;
+    }
+
+    .links {
+      max-width: 450px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 5px;
+    }
+  }
+}

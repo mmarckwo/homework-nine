@@ -1,0 +1,26 @@
+.main {
+  max-width: 980px;
+  //min-height: 820px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $gray;
+
+  .content-area {
+    margin-top: 36px;
+    margin-bottom: 46px;
+    //background-color: blue;
+
+    h3 {
+      text-decoration: none;
+      color: $white;
+      font-family: Ubuntu;
+      font-size: 30px;
+      margin-bottom: 46px;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .main {
+  }
+}
